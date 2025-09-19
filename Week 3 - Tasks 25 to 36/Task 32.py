@@ -20,7 +20,7 @@ def sort(in_list):
             elif in_list[index] < current:
                 index += 1
 
-            return ordered_list
+        return ordered_list
 
 names = []
 
