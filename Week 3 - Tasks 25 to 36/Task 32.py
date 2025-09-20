@@ -1,6 +1,5 @@
 def sort(in_list):
     ordered_list = in_list
-
     length = len(in_list)
 
     for i in range(length-1):
@@ -9,26 +8,35 @@ def sort(in_list):
         index = 0
 
         while sorted == False:
-            if in_list[index] > current:
+            if in_list[index].upper() > current.upper():
                 ordered_list.pop(i+1)
                 ordered_list.insert(index, current)
                 sorted = True
-            elif in_list[index] == current:
+            elif in_list[index].upper() == current.upper():
                 ordered_list.pop(i+1)
                 ordered_list.insert(index, current)
                 sorted = True
-            elif in_list[index] < current:
+            elif in_list[index].upper() < current.upper():
                 index += 1
 
-        return ordered_list
+    return ordered_list
 
 names = []
+running = True
+index = 1
 
-for i in range(3): # TODO: Make this continue until the user says stop
-    name = input(f"Name {i+1}: ")
-    names.append(name)
+while running:
+    name = input(f"Name {index}: ")
+    if name.upper() == "EXIT":
+        running = False
+    else:
+        names.append(name)
+    
+    index += 1
 
 names = sort(names)
+names_string = f"Ordered Names: {names[0]}"
 
-for i in range(3): # TODO: Make this print on one line
-    print(f"Ordered Name {i+1}: {names[i]}")
+for i in range(len(names)-1):
+    names_string = f"{names_string}, {names[i+1]}"
+print(f"\n{names_string}")
