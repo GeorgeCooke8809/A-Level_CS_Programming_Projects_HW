@@ -1,8 +1,11 @@
-f = open("books.bin", "a+")
-
 questions = ["Name: ", "ISBN: ", "Price: £", "Release Year: "]
 
-for i in questions:
-    f.write(f"{input(f"{i}")}\n")
+while True:
+    f = open("books.bin", "a+")
 
-f.close()
+    for i in questions:
+        if i == "Name: ":
+            f.write("\n")
+        f.write(f"{input(f"{i}")}\n")
+
+    f.close()
