@@ -1,5 +1,5 @@
 highest_score = 0
-highest_stundent = ""
+highest_student = ""
 
 for i in range(5):
     current_student = input(f"Student {i+1} Name: ")
@@ -7,6 +7,6 @@ for i in range(5):
 
     if current_score > highest_score:
         highest_score = current_score
-        highest_stundent = current_student
+        highest_student = current_student
 
-print(f"The best student was {highest_stundent} with a score of {highest_score}.")
+print(f"The best student was {highest_student} with a score of {highest_score}.")
