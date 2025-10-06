@@ -1,6 +1,6 @@
-def finish_time(start_hours, start_minutes, taken_hours, taken_minutes):
-    finish_hours = start_hours + taken_hours
-    finish_minutes = start_minutes + taken_minutes
+def finish_time(start, taken):
+    finish_hours = int(start[0]) + int(taken[0])
+    finish_minutes = int(start[1]) + int(taken[1])
 
     if finish_minutes > 60:
         finish_minutes -= 60
@@ -13,12 +13,8 @@ def finish_time(start_hours, start_minutes, taken_hours, taken_minutes):
 
 start_time = input("Start Time (hh:mm): ")
 start_time = start_time.split(":")
-start_hrs = int(start_time[0])
-start_mins = int(start_time[1])
 
 time_taken = input("Time Taken (hh:mm): ")
 time_taken = time_taken.split(":")
-taken_hrs = int(time_taken[0])
-taken_mins = int(time_taken[1])
 
-print(finish_time(start_hrs, start_mins, taken_hrs, taken_mins))
+print(finish_time(start_time, time_taken))
