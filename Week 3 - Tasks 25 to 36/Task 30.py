@@ -19,4 +19,4 @@ def get_notes(funds):
 total = float(input("Funds: £"))
 note_combination = get_notes(total)
 
-print(f"£50 Notes: {note_combination[0]}\n£20 Notes: {note_combination[1]}\n£10 Notes: {note_combination[2]}\n£5 Notes: {note_combination[3]}\n£2 Coins: {note_combination[4]}\n£1 Coins: {note_combination[5]}\n£0.50 Coins: {note_combination[6]}\n£0.20 Coins: {note_combination[7]}\n£0.10 Coins: {note_combination[8]}\n£0.05 Coins: {note_combination[9]}\n£0.02 Coins: {note_combination[10]}\n£0.01 Coins: {note_combination[11]}\n")
+print(f"£50 Notes: {note_combination[0]}\n£20 Notes: {note_combination[1]}\n£10 Notes: {note_combination[2]}\n£5 Notes: {note_combination[3]}\n£2 Coins: {note_combination[4]}\n£1 Coins: {note_combination[5]}\n£0.50 Coins: {note_combination[6]}\n£0.20 Coins: {note_combination[7]}\n£0.10 Coins: {note_combination[8]}\n£0.05 Coins: {note_combination[9]}\n£0.02 Coins: {note_combination[10]}\n£0.01 Coins: {note_combination[11]}\n") 
