@@ -1,6 +1,4 @@
-def change(bill, given):
-    change = given - bill
+def product(a, b):
+    return a * b
 
-    return ("%.2f" % change)
-
-print(f"£{change(bill = 8.5, given = 10)}")
+print(product(12, 15))

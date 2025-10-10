@@ -1,1 +1,1 @@
-print("Keep buggering on\nWinston Chrchill")
+print("Keep buggering on\nWinston Churchill")
